@@ -20,14 +20,15 @@ class tri{
 
       public:
       tri(){cout<< "Empty Constructor" <<endl;}
+
       tri(float n1,float n2)
       {
        l1 = n1;
        l2 = n2;
-      }
-      
+      cout << "Next Constructor" <<endl;
+      }     
 
-      setter(float n1, float n2)
+      void setter(float n1, float n2)
       {
        l1 = n1;
        l2 = n2;
@@ -53,28 +54,30 @@ class tri{
              << a2 * 180/ M_PI << " degrees." 
              << endl;
        }
-       ~tri(){cout<< "Deconstructer" <<endl;}
+//       ~tri(){cout<< "Deconstructer" <<endl;}
 };
 
 int main ()
 {
 //Declaring Variables.
   tri foo;
-  foo.l1 = 3;
-  foo.l2 = 4;
-
   tri bar;
-  bar.l1 = 5;
-  bar.l2 = 12;
+  foo.setter(3, 4);
+  bar.setter(5, 12);
+
+  tri faa(3,4);
+  tri ber(6,12);
 
   foo.new_pr();
   bar.new_pr();
+  faa.new_pr();
+  ber.new_pr();
                                            cout<<""<<endl;
   cout << "This program finds the hypotenuse 'h' of a right triangle if the sides 'a' and 'b' are known." <<endl;
                                            cout<<""<<endl;
 //Printing out the results
   foo.disp();
   bar.disp();
+  faa.disp();
+  ber.disp();
 }
-
-
