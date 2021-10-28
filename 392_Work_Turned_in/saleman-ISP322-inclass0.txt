@@ -1,0 +1,33 @@
+
+By: Salvador Aleman
+
+First Assignment in SDS392 Fall2021:
+
+ This is the algorithm to sorting a bag of potatoes
+
+
+  Requirements:
+   Potatoes in a bag
+   Know the number of potatoes
+   Flat surface
+   Desired number of piles
+
+  Parameters:
+   Kind of sorting i.e. by size (not: color, dimples, etc)
+   Number of piles desired i.e. Large/Medium/Small
+
+  Logic: 
+   Upon placement of potatoes on a flat surface 
+   sepeprate potatoes into 3 piles
+   can go into more piles after the initial 3
+
+  Algorithm:
+
+   1. Dump potatoes on flat surface
+   2. Group them into 3 piles regardless of size
+   3. Choose largest one to lead the big pile
+   4. Choose the smalles to lead the small pile
+   5. Seperate them one by one to its closest size, will end up with two piles
+   6. Choose the smallest potato in the pile of the big potatoes and place it as a medium pile
+   7. Choose the biggest potato in the pile of the small potatoes
+   8. Repeat step 6 and 7 until you have about the same number of potatoes in all 3 piles
