@@ -1,4 +1,4 @@
-/*In class challenge #6 */
+/*In class challenge #7 */
 #include <iostream>
 #include <cmath>
 using std::cout; using std::endl;
@@ -14,6 +14,8 @@ class Point
   y = B;
   cout<< "Two argument constructor"  <<endl;
   }
+ 
+ Point(){cout<<"For Point NO argument constructor"<<endl;}
 
  float distance_to_origin()
  {
@@ -32,13 +34,25 @@ class Point
 
 };
 
+class Line
+{
+ public:
+  Point p1;
+  Point p2;
 
+ Line()
+ {
+  cout<< "Con"  <<endl;
+ }
+};
 
 int main()
 {
  float dist;
  Point P1(3,4);
  Point P2(2,2);
+
+ Line L1; 
 
  dist = P1.distance_to_origin();
 
